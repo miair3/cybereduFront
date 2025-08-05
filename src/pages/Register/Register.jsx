@@ -14,7 +14,7 @@ const Register = () => {
     e.preventDefault()
 
     try {
-      const response = await axios.post('http://localhost:3030/api/register', {
+      const response = await axios.post('https://cyberedu-kz.onrender.com/api/register', {
         username,
         email,
         password
