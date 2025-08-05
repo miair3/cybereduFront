@@ -5,17 +5,17 @@ const videoLessons = [
   {
     id: 1,
     title: "Основы Apex Legends — Урок №1",
-    url: "https://www.youtube.com/embed/VRP8wz3d1N0", // примерное видео
+    url: "https://www.youtube.com/embed/7FJ1g6CQeKE?si=uX8SWKaZCPJTWWHt", // примерное видео
   },
   {
     id: 2,
     title: "Как побеждать в командных боях — Урок №2",
-    url: "https://www.youtube.com/embed/wa9-VyQJU2I",
+    url: "https://www.youtube.com/embed/Bpd00gvO0Hg?si=zWYM5rgzha6Otn3X",
   },
   {
     id: 3,
     title: "Секреты движения и стрельбы — Урок №3",
-    url: "https://www.youtube.com/embed/f2J9o2y-B9w",
+    url: "https://www.youtube.com/embed/LXYty3zvWSs?si=1BOKcol8kigG7W_0",
   },
 ];
 

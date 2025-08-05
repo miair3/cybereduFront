@@ -5,17 +5,17 @@ const videoLessons = [
   {
     id: 1,
     title: "Выживание в Rust — Урок №1",
-    url: "https://www.youtube.com/embed/6kG0GvVsQtU", // пример видео
+    url: "https://www.youtube.com/embed/I5NJit2HeZM?si=djeII9TF2VECttbD", // пример видео
   },
   {
     id: 2,
     title: "Постройка первой базы — Урок №2",
-    url: "https://www.youtube.com/embed/zp3i4ti8RzY", // пример видео
+    url: "https://www.youtube.com/embed/4kVQTEW1hUo?si=LeYqdfGKVFlSAscu", // пример видео
   },
   {
     id: 3,
     title: "Рейды и защита базы — Урок №3",
-    url: "https://www.youtube.com/embed/Nr5PO-1b_5Y", // пример видео
+    url: "https://www.youtube.com/embed/eyzwH1tdm10?si=yXCigzxKSIetH79g", // пример видео
   },
 ];
 

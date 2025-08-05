@@ -5,17 +5,17 @@ const videoLessons = [
   {
     id: 501,
     title: "Основы CS 2 — Урок №1",
-    url: "https://www.youtube.com/embed/zZUKt1Pdtv0",
+    url: "https://www.youtube.com/embed/KY4m3zPlXco?si=5sibD24wD0S-fQ1f",
   },
   {
     id: 502,
     title: "Как улучшить прицел и стрельбу — Урок №2",
-    url: "https://www.youtube.com/embed/uR3um0L_4n4",
+    url: "ttps://www.youtube.com/embed/hRGMNzfrOoU?si=pvMiGbjuROUSfyFv",
   },
   {
     id: 503,
     title: "Смоки и гранаты на картах — Урок №3",
-    url: "https://www.youtube.com/embed/iq6vAfT3lNM",
+    url: "https://www.youtube.com/embed/KASlUcNyNX0?si=NCygMmJMVONFXvsT",
   },
 ];
 

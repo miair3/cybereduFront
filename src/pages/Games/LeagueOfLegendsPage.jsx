@@ -5,17 +5,17 @@ const videoLessons = [
   {
     id: 1,
     title: "Основы League of Legends — Урок №1",
-    url: "https://www.youtube.com/embed/RP-0xABgVI8", // примерное видео
+    url: "https://www.youtube.com/embed/861ID-rWphk?si=0uOBuJZ-tKakFw_l", // примерное видео
   },
   {
     id: 2,
     title: "Как играть за ADC — Урок №2",
-    url: "https://www.youtube.com/embed/Kl2lQCTzjzY",
+    url: "https://www.youtube.com/embed/AmgAdsfiEYA?si=i9IK-jMI675E0e5e",
   },
   {
     id: 3,
     title: "Контроль карты и варды — Урок №3",
-    url: "https://www.youtube.com/embed/FpG6Yd_4s5k",
+    url: "https://www.youtube.com/embed/Y-qcKvLMTuM?si=LdyZpI7OpB93aebb",
   },
 ];
 

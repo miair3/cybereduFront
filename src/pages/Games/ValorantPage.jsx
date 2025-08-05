@@ -5,17 +5,17 @@ const videoLessons = [
   {
     id: 601,
     title: "Основы Valorant — Урок №1",
-    url: "https://www.youtube.com/embed/Xvla1ZFTlJg",
+    url: "https://www.youtube.com/embed/-xF6cRgItSY?si=Z77jCGJpsOnsJfyJ",
   },
   {
     id: 602,
     title: "Лучшие позиции и стрельба — Урок №2",
-    url: "https://www.youtube.com/embed/_Byzjw5mDKg",
+    url: "https://www.youtube.com/embed/CkRlCD_KPE4?si=CrScj_5BFEjPb4I5",
   },
   {
     id: 603,
     title: "Как использовать способности агентов — Урок №3",
-    url: "https://www.youtube.com/embed/L6a-CmOcqGk",
+    url: "https://www.youtube.com/embed/V6AlvR9LUFs?si=AwCGv_NuTwHY7jdt",
   },
 ];
 

@@ -5,17 +5,17 @@ const videoLessons = [
   {
     id: 1,
     title: "Основы Overwatch — Урок №1",
-    url: "https://www.youtube.com/embed/1F7Vwoz5-Qc", // примерное видео
+    url: "https://www.youtube.com/embed/bzAao_TVu8k?si=1QjtgRscRT8sPlj8", // примерное видео
   },
   {
     id: 2,
     title: "Как играть за танков — Урок №2",
-    url: "https://www.youtube.com/embed/0I0tP-Q7kZw",
+    url: "https://www.youtube.com/embed/-SXcdVSP4GQ?si=_5ufuLi4t229CCyT",
   },
   {
     id: 3,
     title: "Тактика и командная игра — Урок №3",
-    url: "https://www.youtube.com/embed/7VJqHyZq2LQ",
+    url: "https://www.youtube.com/embed/5f2bXCuRWT0?si=wRupzm6l4CZHFEFY",
   },
 ];
 

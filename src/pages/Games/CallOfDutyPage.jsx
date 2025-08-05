@@ -10,12 +10,12 @@ const videoLessons = [
   {
     id: 802,
     title: "Тактика командной игры — Урок №2",
-    url: "https://www.youtube.com/embed/sqDFN9oqy2Y",
+    url: "https://www.youtube.com/embed/Tjf6ZKy3Iuc?si=yiPEtd15TFWFnwWW",
   },
   {
     id: 803,
     title: "Секреты выживания в мультиплеере — Урок №3",
-    url: "https://www.youtube.com/embed/v5JXHcXQ3-g",
+    url: "https://www.youtube.com/embed/HX4g3W-yfP0?si=cnKBdMtgKVKBSeuC",
   },
 ];
 

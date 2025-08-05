@@ -5,17 +5,17 @@ const videoLessons = [
   {
     id: 1,
     title: "Основы Free Fire — Урок №1",
-    url: "https://www.youtube.com/embed/4Qz0Z8bcnj0", // примерное видео
+    url: "https://www.youtube.com/embed/EMcu8t_82X0?si=4hdx8z3Ozjf9lis7", // примерное видео
   },
   {
     id: 2,
     title: "Как правильно стрелять — Урок №2",
-    url: "https://www.youtube.com/embed/4Gpo5qX6HT4",
+    url: "https://www.youtube.com/embed/z6WmPJMbABs?si=B2t4sCoF_J0C0bQ6",
   },
   {
     id: 3,
     title: "Тактика выживания — Урок №3",
-    url: "https://www.youtube.com/embed/IV5ElJ-A9e8",
+    url: "https://www.youtube.com/embed/uOwpKYRH1s8?si=ftPIlpO_SlBWj0xh",
   },
 ];
 

@@ -5,17 +5,17 @@ const videoLessons = [
   {
     id: 1,
     title: "Основы Dota 2 — Урок №1",
-    url: "https://www.youtube.com/embed/v5eb8RjAPJw", // примерное видео
+    url: "https://www.youtube.com/embed/3BSB3NEYQ8U?si=-j5eIxHTPRnf9m5w", // примерное видео
   },
   {
     id: 2,
     title: "Как играть на керри — Урок №2",
-    url: "https://www.youtube.com/embed/WJZ7kbPz7wM",
+    url: "https://www.youtube.com/embed/xa6Ib0efuTA?si=VfcBAnp1t_0bja2P",
   },
   {
     id: 3,
     title: "Контроль карты и варды — Урок №3",
-    url: "https://www.youtube.com/embed/LEb6CEbA94M",
+    url: "https://www.youtube.com/embed/IUDa3MrbsYc?si=bWhtbCzRb9BurC4i",
   },
 ];
 

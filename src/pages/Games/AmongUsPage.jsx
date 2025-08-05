@@ -5,17 +5,17 @@ const videoLessons = [
   {
     id: 1,
     title: "Основы Among Us — Урок №1",
-    url: "https://www.youtube.com/embed/NSJ4cESNQfE", // пример видео
+    url: "https://www.youtube.com/embed/qjQb_lSmkGo?si=LuP5JuvbxBqnFOJ5", // пример видео
   },
   {
     id: 2,
     title: "Как быть идеальным предателем — Урок №2",
-    url: "https://www.youtube.com/embed/u4Fj0Ok5HjM", // пример видео
+    url: "https://www.youtube.com/embed/c6E45OAMsLw?si=_wnkRaKpHUnXKM8E", // пример видео
   },
   {
     id: 3,
     title: "Тактика команды и победа экипажа — Урок №3",
-    url: "https://www.youtube.com/embed/HM22QK7E6xo", // пример видео
+    url: "https://www.youtube.com/embed/NpWm-wrDS-k?si=v0GFxHsLr6iqNWcX", // пример видео
   },
 ];
 

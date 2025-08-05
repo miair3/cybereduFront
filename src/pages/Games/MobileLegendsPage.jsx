@@ -5,17 +5,17 @@ const videoLessons = [
   {
     id: 1,
     title: "Как начать играть в Mobile Legends — Урок №1",
-    url: "https://www.youtube.com/embed/3l0f5oYgX9k", // пример видео
+    url: "https://www.youtube.com/embed/G_iUXRQBGqc?si=CwStlL6KYpDLZVBa", // пример видео
   },
   {
     id: 2,
     title: "Лучшие герои для новичков — Урок №2",
-    url: "https://www.youtube.com/embed/VbKkXrK0rtU", // пример видео
+    url: "https://www.youtube.com/embed/fgtaHMJIJHE?si=gFXykmCOChQP7ROc", // пример видео
   },
   {
     id: 3,
     title: "Как побеждать чаще — Урок №3",
-    url: "https://www.youtube.com/embed/hO_EZq8iM9o", // пример видео
+    url: "https://www.youtube.com/embed/Wl4Z5sqDWTs?si=5retbWArUBBfS9CG", // пример видео
   },
 ];
 

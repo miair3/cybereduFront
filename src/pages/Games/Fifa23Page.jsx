@@ -5,17 +5,17 @@ const videoLessons = [
   {
     id: 1,
     title: "Основы FIFA 23 — Урок №1",
-    url: "https://www.youtube.com/embed/jRz6S2pC7V8", // пример видео
+    url: "https://www.youtube.com/embed/0F8264xMj8Y?si=QlI52ijOjH72MA_L", // пример видео
   },
   {
     id: 2,
     title: "Лучшие финты и дриблинг — Урок №2",
-    url: "https://www.youtube.com/embed/T1tjP9z9I0M", // пример видео
+    url: "https://www.youtube.com/embed/GJFH-ie-hs0?si=C8A3nzMuIwwoVXep", // пример видео
   },
   {
     id: 3,
     title: "Тактика и стратегия в FIFA 23 — Урок №3",
-    url: "https://www.youtube.com/embed/6R0T0q1Xyz0", // пример видео
+    url: "https://www.youtube.com/embed/XUQWxU6qOAM?si=fs925YM19XoxaxXE", // пример видео
   },
 ];
 

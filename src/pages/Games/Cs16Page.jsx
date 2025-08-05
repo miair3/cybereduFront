@@ -5,17 +5,17 @@ const videoLessons = [
   {
     id: 401,
     title: "Основы CS 1.6 — Урок №1",
-    url: "https://www.youtube.com/embed/1lCqPZCrW8k",
+    url: "https://www.youtube.com/embed/jn08TBI3iXs?si=dKfZegGXeKlD4I-x",
   },
   {
     id: 402,
     title: "Как улучшить стрельбу — Урок №2",
-    url: "https://www.youtube.com/embed/W_4fcmhlhO0",
+    url: "https://www.youtube.com/embed/F63Dc-7Wo9k?si=WpK8JSkxCjjwqvId",
   },
   {
     id: 403,
     title: "Тактика и командная игра — Урок №3",
-    url: "https://www.youtube.com/embed/r3H6rCduOJI",
+    url: "https://www.youtube.com/embed/LqiP2bXQXSY?si=ttmWe8MoqcpkNRnW",
   },
 ];
 

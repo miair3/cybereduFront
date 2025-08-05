@@ -5,17 +5,17 @@ const videoLessons = [
   {
     id: 1,
     title: "Основы Rocket League — Урок №1",
-    url: "https://www.youtube.com/embed/S8dq7v4zVvQ", // пример видео
+    url: "https://www.youtube.com/embed/lR6NkHYsmao?si=Gwt1ZpC3uO-3ShzN", // пример видео
   },
   {
     id: 2,
     title: "Аэриал и контроль мяча — Урок №2",
-    url: "https://www.youtube.com/embed/tD6yJ1JkU1w", // пример видео
+    url: "https://www.youtube.com/embed/onirpsHOZYM?si=lRNS_5FfmW-h-EFb", // пример видео
   },
   {
     id: 3,
     title: "Тактика и командная игра — Урок №3",
-    url: "https://www.youtube.com/embed/nwrC8_0KXJo", // пример видео
+    url: "https://www.youtube.com/embed/zoLjnpaAOSE?si=PADdkKTbRvlJhmnx", // пример видео
   },
 ];
 

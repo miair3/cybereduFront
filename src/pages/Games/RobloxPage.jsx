@@ -5,17 +5,17 @@ const videoLessons = [
   {
     id: 701,
     title: "Основы Roblox Studio — Урок №1",
-    url: "https://www.youtube.com/embed/_OaThg4q5FY",
+    url: "https://www.youtube.com/embed/ACpIdtTeKa4?si=JdzuQdhchEbgsF6q",
   },
   {
     id: 702,
     title: "Как создать свою первую игру — Урок №2",
-    url: "https://www.youtube.com/embed/b0FZxHjc0lY",
+    url: "https://www.youtube.com/embed/bfmB3Zi9lno?si=5HjrDmg8RXBzGvUg",
   },
   {
     id: 703,
     title: "Как добавить скрипты и события — Урок №3",
-    url: "https://www.youtube.com/embed/nbrjBgsLMqA",
+    url: "https://www.youtube.com/embed/VD9uiGAg6SE?si=KgG4_JQ2JSX-tuJw",
   },
 ];
 

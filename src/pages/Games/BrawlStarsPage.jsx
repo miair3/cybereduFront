@@ -5,17 +5,17 @@ const videoLessons = [
   {
     id: 1,
     title: "Как начать играть в Brawl Stars — Урок №1",
-    url: "https://www.youtube.com/embed/5B0C0M1JbV4", // пример видео
+    url: "https://www.youtube.com/embed/6mfpeDeAYn4?si=ez3qT5YMA4UkK1qy", // пример видео
   },
   {
     id: 2,
     title: "Лучшие советы для новичков — Урок №2",
-    url: "https://www.youtube.com/embed/d9c9Dql0n28", // пример видео
+    url: "https://www.youtube.com/embed/N_MO5PfvQww?si=emk-cPZ141I2uzvW", // пример видео
   },
   {
     id: 3,
     title: "Как апнуть 500+ кубков — Урок №3",
-    url: "https://www.youtube.com/embed/XcAQYgI_yHk", // пример видео
+    url: "https://www.youtube.com/embed/rBZ8AzAfB_8?si=MOENsuqePQaTgZHJ", // пример видео
   },
 ];
 
