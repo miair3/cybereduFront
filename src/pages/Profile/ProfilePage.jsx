@@ -1,11 +1,24 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useAuth } from '../../context/AuthContext';
 import { useNavigate } from 'react-router-dom';
 
 const Profile = () => {
   const { user, updateAvatar, logout } = useAuth();
   const [error, setError] = useState('');
+  const [notes, setNotes] = useState([]);
+  const [noteText, setNoteText] = useState('');
   const navigate = useNavigate();
+
+  // Загружаем заметки из localStorage
+  useEffect(() => {
+    const savedNotes = JSON.parse(localStorage.getItem('userNotes') || '[]');
+    setNotes(savedNotes);
+  }, []);
+
+  // Сохраняем заметки в localStorage
+  useEffect(() => {
+    localStorage.setItem('userNotes', JSON.stringify(notes));
+  }, [notes]);
 
   const handleAvatarChange = (e) => {
     const file = e.target.files[0];
@@ -22,6 +35,17 @@ const Profile = () => {
   const handleLogout = () => {
     logout();
     navigate('/login');
+  };
+
+  const addNote = () => {
+    if (!noteText.trim()) return;
+    const newNote = { id: Date.now(), text: noteText };
+    setNotes([newNote, ...notes]);
+    setNoteText('');
+  };
+
+  const deleteNote = (id) => {
+    setNotes(notes.filter((note) => note.id !== id));
   };
 
   if (!user) {
@@ -90,17 +114,46 @@ const Profile = () => {
         </div>
       </div>
 
-      {/* Раздел комментариев или заметок */}
+      {/* Раздел заметок */}
       <div className="mt-12 bg-[#2a2d34] p-6 rounded-xl border border-cyan-700 shadow-md">
         <h3 className="text-2xl text-cyan-300 mb-4">Заметки:</h3>
-        <p className="text-gray-300">
-          Добавь любимые игры, цели или что ты хочешь изучить на платформе CyberEdu.
-        </p>
+
         <textarea
-          rows="4"
-          placeholder="Запиши свои цели и мысли..."
-          className="w-full mt-4 p-3 rounded-lg bg-gray-800 text-white border border-cyan-600 focus:outline-none focus:ring-2 focus:ring-cyan-500"
+          rows="3"
+          placeholder="Напиши новую заметку..."
+          className="w-full p-3 rounded-lg bg-gray-800 text-white border border-cyan-600 focus:outline-none focus:ring-2 focus:ring-cyan-500"
+          value={noteText}
+          onChange={(e) => setNoteText(e.target.value)}
         />
+
+        <button
+          onClick={addNote}
+          className="mt-4 bg-cyan-600 hover:bg-cyan-700 px-6 py-2 rounded-lg text-white transition duration-300"
+        >
+          ➕ Добавить заметку
+        </button>
+
+        {/* Список заметок */}
+        <div className="mt-6 space-y-4">
+          {notes.length === 0 ? (
+            <p className="text-gray-400 text-sm">Нет заметок.</p>
+          ) : (
+            notes.map((note) => (
+              <div
+                key={note.id}
+                className="bg-gray-800 p-4 rounded-lg border border-gray-600 flex justify-between items-center"
+              >
+                <span>{note.text}</span>
+                <button
+                  onClick={() => deleteNote(note.id)}
+                  className="ml-4 text-red-400 hover:text-red-600"
+                >
+                  ❌
+                </button>
+              </div>
+            ))
+          )}
+        </div>
       </div>
 
       {error && <div className="text-red-400 mt-6 text-center">{error}</div>}

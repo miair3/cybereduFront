@@ -5,7 +5,7 @@ const videoLessons = [
   {
     id: 801,
     title: "Call of Duty: Основы стрельбы — Урок №1",
-    url: "https://www.youtube.com/embed/LJ4Bz6e2S3A",
+    url: "https://www.youtube.com/embed/Go9egqY92T8?si=dC-WnrP2I0nOGVcH",
   },
   {
     id: 802,
