@@ -26,10 +26,8 @@ const FortnitePage = () => {
   const [dislikesCount, setDislikesCount] = useState(0);
   const [comments, setComments] = useState([]);
   const [commentText, setCommentText] = useState("");
+  const token = localStorage.getItem("authToken");
 
-  const token = localStorage.getItem("token");
-
-  // Загружаем лайки и дизлайки
   useEffect(() => {
     const fetchLessonData = async () => {
       try {
@@ -56,34 +54,21 @@ const FortnitePage = () => {
       }
     };
 
-    if (token) {
-      fetchLessonData();
-    }
+    if (token) fetchLessonData();
   }, [selectedLesson.id, token]);
 
   const handleLike = async () => {
     try {
-      if (likeStatus === "like") {
-        await axios.delete(
-          `https://cyberedu-kz.onrender.com/api/likes/${selectedLesson.id}`,
-          { headers: { Authorization: `Bearer ${token}` } }
-        );
-        setLikeStatus(null);
-        setLikesCount((prev) => prev - 1);
-      } else {
-        await axios.post(
-          "https://cyberedu-kz.onrender.com/api/likes",
-          { lessonId: selectedLesson.id, liked: true },
-          { headers: { Authorization: `Bearer ${token}` } }
-        );
+      await axios.post(
+        "https://cyberedu-kz.onrender.com/api/likes",
+        { lessonId: selectedLesson.id, liked: true },
+        { headers: { Authorization: `Bearer ${token}` } }
+      );
 
-        const wasDisliked = likeStatus === "dislike";
-        setLikeStatus("like");
-        setLikesCount((prev) => prev + 1);
-        if (wasDisliked) {
-          setDislikesCount((prev) => prev - 1);
-        }
-      }
+      const wasDisliked = likeStatus === "dislike";
+      setLikeStatus("like");
+      setLikesCount((prev) => prev + 1);
+      if (wasDisliked) setDislikesCount((prev) => prev - 1);
     } catch (error) {
       console.error("Ошибка при лайке:", error);
     }
@@ -108,9 +93,7 @@ const FortnitePage = () => {
         const wasLiked = likeStatus === "like";
         setLikeStatus("dislike");
         setDislikesCount((prev) => prev + 1);
-        if (wasLiked) {
-          setLikesCount((prev) => prev - 1);
-        }
+        if (wasLiked) setLikesCount((prev) => prev - 1);
       }
     } catch (error) {
       console.error("Ошибка при дизлайке:", error);
@@ -165,19 +148,17 @@ const FortnitePage = () => {
           <div className="flex items-center gap-4">
             <button
               onClick={handleLike}
-              className={`px-5 py-2 rounded-full text-lg flex items-center gap-2 transition ${
-                likeStatus === "like" ? "bg-green-600" : "bg-gray-700"
+              className={`px-5 py-2 rounded-full text-lg flex items-center gap-2 transition-all duration-300 transform hover:scale-105 ${
+                likeStatus === "like" ? "bg-green-600 shadow-lg shadow-green-500/50" : "bg-gray-700"
               }`}
-              disabled={!token}
             >
               👍 {likesCount}
             </button>
             <button
               onClick={handleDislike}
-              className={`px-5 py-2 rounded-full text-lg flex items-center gap-2 transition ${
-                likeStatus === "dislike" ? "bg-red-600" : "bg-gray-700"
+              className={`px-5 py-2 rounded-full text-lg flex items-center gap-2 transition-all duration-300 transform hover:scale-105 ${
+                likeStatus === "dislike" ? "bg-red-600 shadow-lg shadow-red-500/50" : "bg-gray-700"
               }`}
-              disabled={!token}
             >
               👎 {dislikesCount}
             </button>
@@ -219,21 +200,6 @@ const FortnitePage = () => {
             ))}
           </div>
         </div>
-      </div>
-
-      <div className="mt-10 border-t border-gray-700 pt-6 flex flex-wrap justify-center gap-4">
-        <button className="px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-xl text-white text-sm">
-          Задать вопрос учителю
-        </button>
-        <button className="px-6 py-3 bg-yellow-600 hover:bg-yellow-700 rounded-xl text-white text-sm">
-          Пожаловаться на урок
-        </button>
-        <a
-          href="/games"
-          className="px-6 py-3 bg-gray-700 hover:bg-gray-600 rounded-xl text-white text-sm"
-        >
-          ← Вернуться к играм
-        </a>
       </div>
     </div>
   );
